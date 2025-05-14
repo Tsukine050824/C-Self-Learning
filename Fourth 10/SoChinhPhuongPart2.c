@@ -8,13 +8,15 @@ int SoChinhPhuong(int n) {
     return m * m == n;
 }
 
-int main(){
-    int n;
+int main() {
+    int n,i = 0, count = 0;
     scanf("%d", &n);
-    if (n >= 0 && SoChinhPhuong(n)) {
-        printf("YES\n");
-    } else {
-        printf("NO\n");
+    while (count < n)
+    {
+        printf("%d ", i * i);
+        i++;
+        count++;
     }
+    
     return 0;
 }
